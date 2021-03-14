@@ -1,3 +1,150 @@
 /* ======================================================
    OEFENEN MET FLEXBOX
 ========================================================= */
+
+:root {
+    --screenWidth: 1200px;
+    --numberOfArticles: 3;
+    --fiveArticlePadding: 20px;
+    --fiveArticleWidth: calc(var(--screenWidth) / var(--numberOfArticles) );
+}
+
+/*--------------------------------------------------------------*/
+
+.one {
+    display: flex;
+    /*border: red solid 5px;*/
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+/*.oneChild1 {
+    border: yellow solid 5px;
+}
+
+.oneChild2 {
+    border: yellow solid 5px;
+}*/
+
+/*--------------------------------------------------------------*/
+
+.two {
+    display: flex;
+    justify-content: space-between;
+    /*border: red solid 5px;*/
+}
+
+/*
+.twoChild1 {
+
+    border: yellow solid 5px;
+}
+
+.twoChild2 {
+    border: yellow solid 5px;
+
+
+}
+*/
+
+/*--------------------------------------------------------------*/
+
+.three {
+    display: flex;
+    /*border: red solid 5px;*/
+    justify-content: space-between;
+}
+
+/*.three ul{
+    list-style-type: none;
+}*/
+
+.three ul li {
+    display: inline-block;
+/*    }
+
+    .threeChild1 {
+        border: yellow solid 5px;
+
+
+    }
+
+    .threeChild2 {
+        border: yellow solid 5px;
+
+    }
+
+    .threeChild3 {
+        border: yellow solid 5px;
+
+
+    }
+
+    .threeChild4 {
+        border: yellow solid 5px;*/
+
+    /*--------------------------------------------------------------*/
+}
+
+.four {
+    display: flex;
+    /*border: red solid 5px;*/
+    justify-content: center;
+    align-items: center;
+
+}
+
+.four form {
+    display: flex;
+    /*border: blue solid 5px;*/
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/*.four label{
+    display: inline-block;
+}
+
+
+.fourChild1 {
+    border: yellow solid 5px;
+}
+
+.fourChild2 {
+    border: yellow solid 5px;
+}
+
+.fourChild3 {
+    border: yellow solid 5px;
+}
+
+.fourChild4 {
+    border: yellow solid 5px;
+}*/
+
+/*--------------------------------------------------------------*/
+
+.five {
+    display: flex;
+    /*border: red solid 5px;*/
+    flex-wrap: wrap;
+
+}
+
+
+.fiveChild1 {
+    /*border: yellow solid 5px;*/
+    flex: 1 1 calc(var(--fiveArticleWidth) - calc(var(--fiveArticlePadding) * 2));
+}
+
+.fiveChild2 {
+    /*border: yellow solid 5px;*/
+    flex: 1 1 calc(var(--fiveArticleWidth) - calc(var(--fiveArticlePadding) * 2));
+}
+
+.fiveChild3 {
+    /*border: yellow solid 5px;*/
+    flex: 1 1 calc(var(--fiveArticleWidth) - calc(var(--fiveArticlePadding) * 2));
+}
